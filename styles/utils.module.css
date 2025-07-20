@@ -1,0 +1,32 @@
+/* 両端ぞろえ */
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 横並び(基本系) */
+.bySide {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .bySide {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* 横並び（中央ぞろえ） */
+.sideAndCenter {
+  composes: bySide;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .sideAndCenter {
+    text-align: left;
+  }
+}

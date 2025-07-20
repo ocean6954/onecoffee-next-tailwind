@@ -1,0 +1,105 @@
+<svg
+    id="_レイヤー_2"
+    data-name="レイヤー 2"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 201.34 201.34"
+  >
+    <defs>
+      <style>
+        {`
+        .iicls-1 {
+          stroke: url(#_インスタ-3);
+        }
+         .iicls-1, .iicls-2, .iicls-3, .iicls-4, .iicls-5 {
+        fill: none;
+        strokeMiterlimit: 10;
+        strokeWidth: 11px;
+      }
+
+      .iicls-2 {
+        stroke: url(#_インスタ-4);
+      }
+
+      .iicls-3 {
+        stroke: url(#_インスタ-2);
+      }
+
+      .iicls-4 {
+        stroke: url(#_インスタ-5);
+      }
+
+      .iicls-5 {
+        stroke: url(#_インスタ);
+      }
+      `}
+      </style>
+      <linearGradient
+        id="_インスタ"
+        data-name="インスタ"
+        x1="118.58"
+        y1="29.36"
+        x2="148.1"
+        y2="29.36"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop offset=".12" stop-color="#fccd00" />
+        <stop offset=".28" stop-color="#f29b29" />
+        <stop offset=".44" stop-color="#f1942e" />
+        <stop offset=".75" stop-color="#ea652d" />
+        <stop offset=".91" stop-color="#d82c8a" />
+      </linearGradient>
+      <linearGradient
+        id="_インスタ-2"
+        data-name="インスタ"
+        x1="51.58"
+        y1="29.36"
+        x2="82.15"
+        y2="29.36"
+      />
+      <linearGradient
+        id="_インスタ-3"
+        data-name="インスタ"
+        x1="5.5"
+        y1="53.23"
+        x2="195.84"
+        y2="53.23"
+      />
+      <linearGradient
+        id="_インスタ-4"
+        data-name="インスタ"
+        x1="0"
+        y1="100.67"
+        x2="201.34"
+        y2="100.67"
+      />
+      <linearGradient
+        id="_インスタ-5"
+        data-name="インスタ"
+        x1="-76.46"
+        y1="85.88"
+        x2="-19.16"
+        y2="85.88"
+        gradientTransform="translate(94.98 16.14) rotate(-30)"
+      />
+    </defs>
+    <g id="_レイヤー_1-2" data-name="レイヤー 1">
+      <g>
+        <line class="icls-5" x1="123.68" y1="5.5" x2="143" y2="53.23" />
+        <line class="icls-3" x1="56.64" y1="5.5" x2="77.09" y2="53.23" />
+        <line class="icls-1" x1="5.5" y1="53.23" x2="195.84" y2="53.23" />
+        <rect
+          class="icls-2"
+          x="5.5"
+          y="5.5"
+          width="190.34"
+          height="190.34"
+          rx="34.02"
+          ry="34.02"
+        />
+        <path
+          class="icls-4"
+          d="M84.74,99.23v40.22c0,2.51,2.72,4.08,4.9,2.83l33.9-19.57c2.59-1.5,2.59-5.24,0-6.73l-33.9-19.57c-2.18-1.26-4.9.31-4.9,2.83Z"
+        />
+      </g>
+    </g>
+  </svg>

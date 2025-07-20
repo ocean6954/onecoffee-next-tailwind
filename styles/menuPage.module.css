@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  align-items: center; /* 横線を上下中央 */
+  display: flex; /* 文字と横線を横並び */
+  /* justify-content: center;  */
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: white; /*背景色*/
+  margin-left: 1.5rem;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content::after {
+  background-color: #d9a62e; /* 横線の色 */
+  content: '';
+  height: 5px; /* 横線の高さ */
+  width: 70vw; /* 横線の長さ */
+}
+
+.content::after {
+  margin-left: 5%; /* 文字との余白 */
+}

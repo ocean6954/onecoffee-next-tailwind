@@ -1,0 +1,116 @@
+.container {
+  width: 80%;
+  margin: 0 auto 15rem auto;
+}
+.title {
+  margin-right: auto;
+  margin-bottom: 2rem;
+  color: var(--accent);
+  align-items: center; /* 横線を上下中央 */
+  display: flex;
+  font-size: 2.8rem;
+  font-weight: normal;
+}
+
+.title::after {
+  margin-left: 10%;
+  border-radius: 5px; /* 横線の両端を丸く */
+  content: '';
+  width: 50vw;
+  height: 2px;
+  background-color: var(--accent); /* 線の色 */
+}
+.layout {
+  display: flex;
+  width: 100%;
+}
+
+.text {
+  flex: 2; /* 40% */
+  color: var(--accent);
+}
+
+.right {
+  flex: 3;
+}
+.image {
+  font-size: 0;
+  margin-left: 2rem;
+  /* background-color: red; */
+  height: 69%;
+  position: relative;
+}
+
+.img {
+  position: relative;
+  z-index: 1;
+  border: 6px solid var(--accent);
+  border-radius: 10px;
+  width: 40px;
+}
+
+.mug {
+  position: absolute;
+  width: 50px;
+  right: 0;
+  transform: translate(25%, -60%);
+  z-index: 2;
+}
+
+.name,
+.payment {
+  border: 2px solid var(--accent);
+  border-radius: 20px; /* 角を少し丸く */
+  width: fit-content; /* 文字に合わせて大きさを調整 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.2rem; /* 文字と囲いの線の間に余白を追加 */
+  font-weight: bold;
+}
+.description {
+  color: var(--black);
+  margin-left: 1.5rem;
+}
+.description2 {
+  color: var(--black);
+  margin-left: 3.5rem;
+}
+.list {
+  margin-bottom: 2rem;
+}
+.list li:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.payment {
+  margin: auto 0 0 2rem;
+  color: var(--accent);
+  /* height: 30px; */
+  font-size: var(--1rem);
+}
+
+@media (min-width: 768px) {
+  .title {
+    margin-bottom: 3rem;
+    font-size: 4rem;
+  }
+  .title::after {
+    height: 3px;
+  }
+  .container {
+    width: 460px;
+  }
+  .description,
+  .description2 {
+    font-size: 1.7rem;
+  }
+  .name,
+  .payment {
+    font-size: 1.7rem;
+    border: 3px solid var(--accent);
+  }
+  .image {
+    height: 69%;
+  }
+}

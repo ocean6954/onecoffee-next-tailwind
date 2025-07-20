@@ -1,0 +1,149 @@
+.menuWrapper {
+  background-color: greenyellow;
+}
+
+.menuArea {
+  /* background-color: var(--white); */
+  background-color: #fbf4e5;
+  width: 80%;
+  height: 90%;
+  margin: 5% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 2px solid #d9a62e;
+  max-width: 1140px;
+  /* opacity: 0.5; */
+}
+
+.text {
+  color: var(--accent);
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  justify-content: space-between;
+}
+.title {
+  color: var(--black);
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin: 8% 0;
+  font-weight: normal;
+}
+.display {
+  width: 100%;
+  height: 90%;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display span {
+  /* margin-left: 2rem; */
+  color: var(--accent);
+  color: var(--black);
+  display: none;
+}
+.display ul {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.display li {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.menuRight {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.menuRight p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.display p {
+  color: #636363;
+  font-size: 14px;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+
+@media (max-width: 768px) {
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.name {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  font-size: var(--small-heading3);
+  font-weight: 400;
+}
+.modalWindow {
+  composes: modalOpen from 'styles/modal.module.css';
+  animation: modalBgOpenAnime 0.3s forwards;
+}
+@keyframes modalBgOpenAnime {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.modal_bg {
+  composes: modal_bg from 'styles/modal.module.css';
+  z-index: 11;
+  opacity: 0.5;
+}
+
+.modalOpen {
+  display: flex;
+}
+.fit {
+  width: fit-content;
+  margin-right: 0;
+  z-index: 100;
+}
+.content {
+  z-index: 2;
+  width: 50%;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation: bgOpenAnime 0.3s forwards;
+}
+@keyframes bgOpenAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+.img {
+  color: #000;
+}
+@keyframes anim {
+  0% {
+    top: 0;
+    /* right: 0; */
+  }
+
+  100% {
+    top: -50px;
+    /* right: 100px; */
+  }
+}

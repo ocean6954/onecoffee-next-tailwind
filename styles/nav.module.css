@@ -1,0 +1,81 @@
+.nav {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  z-index: 7;
+  height: 50px;
+}
+
+.nav::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 4px; /* ボーダーの高さ */
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 5%,
+    var(--accent) 5%,
+    var(--accent) 95%,
+    transparent 95%,
+    transparent 100%
+  );
+}
+.list {
+  display: flex;
+  color: var(--accent);
+  margin: 1rem 0;
+  width: 100%;
+  font-size: 1.4rem;
+  /* background-color: red; */
+}
+.list li {
+  position: absolute;
+}
+.list li:nth-child(2) {
+  left: 5%;
+}
+.list li:nth-child(3) {
+  left: 16%;
+}
+.list li:nth-child(4) {
+  left: 27%;
+}
+.list li:nth-child(1) {
+  opacity: 0;
+  position: static;
+}
+.list li {
+  transition: transform 0.3s ease;
+}
+
+.list li.active {
+  transform: translateX(-50%);
+}
+.icon {
+  position: absolute;
+  bottom: 0; /* 下線の厚みに合わせて位置を調整 */
+  z-index: 10;
+  width: 200px;
+  transform: translate(-4%, 60%);
+}
+
+@media (hover: hover) {
+  .list a:hover {
+    color: var(--fire);
+  }
+}
+
+@media (hover: none) {
+  .list a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .list a:active {
+    color: var(--accent);
+  }
+}

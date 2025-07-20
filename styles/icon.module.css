@@ -1,0 +1,54 @@
+.test2 {
+  position: relative;
+  z-index: 0;
+  margin: 0 auto;
+}
+
+.bag {
+  width: 140px;
+  height: 175px;
+  z-index: 1;
+  /* background-color: green; */
+}
+.image {
+  position: absolute;
+}
+.imageContainer {
+  position: absolute;
+  width: 75px;
+  left: 8%;
+  bottom: 50%;
+  z-index: 1;
+  max-width: 150px;
+}
+
+.bagColor {
+  width: 10px;
+  height: 10px;
+  z-index: 2;
+}
+.itemContainer {
+  width: 100px;
+  /* height: 100px; */
+  /* background-color: green; */
+}
+
+@media (min-width: 425px) {
+  .bag {
+    width: 160px;
+    height: 200px;
+  }
+  .imageContainer {
+    width: 85px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bag {
+    width: 280px;
+    height: 350px;
+  }
+  .imageContainer {
+    width: 150px;
+  }
+}

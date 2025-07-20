@@ -1,0 +1,95 @@
+@keyframes drawBorder {
+  to {
+    width: 80vw;
+    height: 300px;
+  }
+}
+
+.wrapper {
+  width: 80vw;
+  height: 300px;
+  margin: 15rem auto;
+  position: relative;
+  border: 3px solid var(--accent); /* 枠線の幅や色を調整 */
+  border-radius: 15%; /* 角の丸みを設定 */
+}
+
+@keyframes borderAnimation {
+  from {
+    width: 0;
+    left: 50%; /* 左端の位置を真ん中に設定 */
+  }
+  to {
+    width: 100%;
+    left: 0; /* 左端の位置を左端に設定 */
+  }
+}
+
+.title {
+  font-size: 2rem;
+  position: absolute;
+  text-align: center;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  transform: translate(-50%, -50%);
+  background-color: var(--main);
+
+  color: var(--black);
+  padding: 0 1rem;
+}
+.image {
+  width: 60%;
+  margin: 2rem 0;
+}
+
+.wrapper p {
+  color: var(--black);
+  width: 78%;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.content {
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid var(--main); /* 枠線の幅や色を調整 */
+  border-radius: 15%; /* 角の丸みを設定 */
+}
+
+.link {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  width: 30%;
+  transform: translate(-50%, 50%);
+  background-color: var(--main);
+  padding: 0 1em 2px 1em;
+  color: var(--accent);
+  border-radius: 10px;
+  border: 2px solid var(--accent);
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  margin: auto 0 auto 1em;
+  width: 20px;
+  height: 20px;
+}
+.escape {
+  transform: scale(1.5, 2);
+  display: inline-block;
+  margin-top: 6%;
+}
+
+@media (min-width: 426px) {
+  .wrapper {
+    width: 460px;
+    height: 360px;
+  }
+}

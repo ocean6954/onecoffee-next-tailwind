@@ -1,0 +1,51 @@
+.balloon {
+  display: inline-block;
+  position: relative;
+  margin-top: 1em;
+  padding: 1em;
+  background: var(--yellow);
+  border-radius: var(--border-radius);
+}
+
+.balloon:before {
+  content: '';
+  position: absolute;
+  margin: 0;
+  bottom: -1.5em;
+  right: 1.5em;
+  width: 0;
+  height: 0;
+  border-top: 2em solid var(--yellow);
+  border-left: 0.6em solid transparent;
+  border-right: 0.6em solid transparent;
+  transform: rotate(-30deg);
+}
+
+.balloon span,
+.text {
+  color: var(--accent);
+  font-size: 1em;
+}
+.span {
+  color: var(--accent);
+  font-size: 1em;
+}
+
+.right {
+  text-align: right;
+  margin-top: 1em;
+}
+.left {
+  position: relative;
+  z-index: 1;
+}
+
+.access {
+  width: 30%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .access {
+    width: 70%;
+  }
+}

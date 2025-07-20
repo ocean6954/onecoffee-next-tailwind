@@ -1,0 +1,10 @@
+.img {
+  opacity: 1;
+}
+.flexContainer {
+  composes: sideAndCenter from 'styles/utils.module.css';
+}
+
+.content {
+  font-size: 1em;
+}

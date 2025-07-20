@@ -1,0 +1,17 @@
+/* .band {
+  position: relative;
+  height: 100px;
+  width: 100vw;
+  background-color: var(--accent);
+} */
+
+.band {
+  position: relative;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: left;
+  padding: 1% 2%;
+  width: 100vw;
+  background-color: var(--accent);
+}

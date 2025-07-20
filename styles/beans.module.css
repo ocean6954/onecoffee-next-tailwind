@@ -1,0 +1,36 @@
+.beans {
+  width: fit-content;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+.beans > figure {
+  display: inline-block;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  margin: var(--m-top) 0.5em;
+  opacity: 0;
+}
+.beans > figure:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.beans > figure:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.beans > figure:nth-child(4) {
+  animation-delay: 0.9s;
+}
+.beans > figure:nth-child(5) {
+  animation-delay: 1.2s;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(150%); /*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0); /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}

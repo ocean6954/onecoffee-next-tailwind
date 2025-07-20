@@ -1,0 +1,79 @@
+.container {
+  /* 2カラムレイアウト */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  width: 80%;
+  margin: 0 auto 15rem auto;
+}
+
+.title {
+  margin-right: auto;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  align-items: center; /* 横線を上下中央 */
+  display: flex;
+  font-size: 2.8rem;
+  font-weight: normal;
+}
+
+.title::after {
+  margin-left: 10%;
+  border-radius: 5px; /* 横線の両端を丸く */
+  content: '';
+  width: 50vw;
+  height: 2px;
+  background-color: var(--accent); /* 線の色 */
+  flex-grow: 1;
+}
+
+.linkWrapper {
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+.linkWrapper h3 {
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.image {
+  width: 150px;
+  position: relative;
+  flex-grow: 1;
+}
+.link {
+  background-color: var(--accent); /* 丸い枠の背景色 */
+  border-radius: 50%; /* 正円にするためには 50% に設定 */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-decoration: underline;
+  position: absolute;
+  /* font-size: 1.4rem; */
+  right: 0%;
+  bottom: -40%;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 4rem;
+  }
+  .title::after {
+    height: 3px;
+  }
+  .container {
+    width: 460px;
+  }
+
+  .link {
+    width: 70px;
+    height: 70px;
+    font-size: 1.6rem;
+    bottom: -60%;
+  }
+}

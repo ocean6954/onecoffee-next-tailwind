@@ -1,0 +1,14 @@
+.wrapper {
+  padding: var(--space-xl) 0;
+  background-color: var(--accent);
+  margin-top: auto;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.text {
+  /* text-align: center; */
+  color: var(--black);
+}
