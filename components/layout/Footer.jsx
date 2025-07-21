@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer
       className="
-      bg-coffee-fire/90 backdrop-blur-sm
+      bg-coffee-charcoal/90 backdrop-blur-sm
       text-white
       py-8
       shadow-inner shadow-coffee-fire/50

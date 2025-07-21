@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Inter } from "next/font/google"
+import { Inter } from 'next/font/google'
 import Container from 'src/components/layout/Container'
 import Hero from 'src/components/layout/Hero'
 import Review from 'src/components/sections/Review'
@@ -25,7 +25,7 @@ export default function Home() {
       <div
         className="
         min-h-screen
-        bg-gradient-to-b from-coffee-fire/60 via-coffee-main to-coffee-charcoal/20
+        bg-gradient-to-b from-coffee-fire/60 via-coffee-main to-coffee-charcoal/70
 
       "
       >

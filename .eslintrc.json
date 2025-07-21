@@ -2,9 +2,6 @@
   "extends": ["next/core-web-vitals", "next"],
   "rules": {
     "react/prop-types": "off",
-    "react/no-unknown-property": [
-      "error",
-      { "ignore": ["css", "jsx", "global"] }
-    ]
+    "react/no-unknown-property": ["error", { "ignore": ["css", "global"] }]
   }
 }
