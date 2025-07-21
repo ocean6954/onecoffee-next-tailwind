@@ -36,6 +36,7 @@ const nextConfig = {
     ],
     // disableStaticImages: true, // 必要に応じて
   },
+  output: 'export',
 
   webpack: (config) => {
     config.module.rules.push({
