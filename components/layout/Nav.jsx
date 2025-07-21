@@ -43,7 +43,7 @@ export default function Nav() {
           >
             <Link
               href={text === 'Home' ? '/' : `/${text.toLowerCase()}`}
-              className="text-coffee-accent font-medium text-lg md:text-xl hover:text-coffee-accent duration-300 tracking-wide relative group-hover:scale-105 transform transition-transform block py-2 px-4"
+              className="text-coffee-charcoal font-medium text-2xl md:text-x2l hover:text-coffee-accent duration-300 tracking-wide relative group-hover:scale-105 transform transition-transform block py-2 px-4"
             >
               {text}
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-coffee-accent group-hover:w-full transition-all duration-300"></span>
@@ -56,7 +56,7 @@ export default function Nav() {
       <div
         className="absolute top-1/2 -translate-y-1/2 transition-all duration-500 ease-in-out transform -translate-x-1/2 drop-shadow-lg pointer-events-none"
         style={{
-          left: center - 30,
+          left: center - 32,
         }}
       >
         <div className="filter drop-shadow-md">
