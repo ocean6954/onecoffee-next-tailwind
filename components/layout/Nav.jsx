@@ -7,27 +7,25 @@ export default function Nav() {
   const [center, setCenter] = useState(0)
   const ref0 = useRef(null)
   const ref1 = useRef(null)
-  const elementRefs = useMemo(() => [ref0, ref1], [])
+  const elementRefs = [ref0, ref1] // JSXで使うためにここで定義
   const router = useRouter()
 
-  const updateCenter = useCallback(
-    (index) => {
-      const rect = elementRefs[index]?.current?.getBoundingClientRect()
-      if (rect) {
-        const x = rect.width / 2 + rect.left
-        setCenter(x)
-      }
-    },
-    [elementRefs],
-  )
+  const updateCenter = (index) => {
+    const refs = [ref0, ref1]
+    const rect = refs[index]?.current?.getBoundingClientRect()
+    if (rect) {
+      const x = rect.width / 2 + rect.left
+      setCenter(x)
+    }
+  }
 
   useEffect(() => {
     if (router.pathname === '/') {
       updateCenter(0)
-    } else if (router.pathname === '/Menu') {
+    } else if (router.pathname === '/menu') {
       updateCenter(1)
     }
-  }, [router.pathname, updateCenter])
+  }, [router.pathname])
 
   const handleClick = (index) => {
     updateCenter(index)

@@ -1,6 +1,8 @@
 import MenuDisplay from 'components/menu/MenuDisplay'
+import { getAllPosts, getPostBySlug } from 'lib/api'
+import { getPlaiceholder } from 'plaiceholder'
 import React, { useState, useEffect, useCallback } from 'react'
-import { Drink, Bean, Food } from 'src/components/ui/iconSvg'
+import { Drink, Bean, Food } from 'src//lib/iconSvg'
 import Container from 'src/components/layout/Container'
 import { useRouter } from 'next/router'
 
@@ -21,13 +23,13 @@ export default function Menu({ posts }) {
     openModal(modalNumber)
   }, [])
 
-  //const triggerFunction = router.query.triggerFunction
+  const triggerFunction = router.query.triggerFunction
 
   useEffect(() => {
     if (triggerFunction) {
       handleIconClick(triggerFunction)
     }
-  }, [handleIconClick])
+  }, [handleIconClick, triggerFunction])
 
   const menuItems = [
     {
@@ -252,4 +254,17 @@ export default function Menu({ posts }) {
       </Container>
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const posts = await getAllPosts()
+  for (const post of posts) {
+    const { base64 } = await getPlaiceholder(post.eyecatch.url)
+    post.eyecatch.blurDataURL = base64
+  }
+  return {
+    props: {
+      posts: posts,
+    },
+  }
 }

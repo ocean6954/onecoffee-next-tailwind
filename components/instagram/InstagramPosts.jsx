@@ -105,15 +105,22 @@ const InstagramPosts = ({ posts }) => {
                     </div>
                   </div>
 
-                  <Image
-                    src={media.thumbnail_url}
-                    alt="Instagram動画投稿"
-                    fill
+                  <video
+                    src={media.media_url}
+                    poster={media.thumbnail_url}
+                    muted
+                    playsInline
+                    preload="metadata"
                     className="
-                      object-cover
+                      w-full h-full object-cover
                       group-hover:brightness-110 group-hover:contrast-105
                       transition-all duration-500
                     "
+                    onLoadedMetadata={(e) => {
+                      try {
+                        e.target.currentTime = 0.1
+                      } catch {}
+                    }}
                   />
 
                   {/* 炭火のような影 */}
@@ -156,86 +163,6 @@ const InstagramPosts = ({ posts }) => {
                       transition-all duration-500
                     "
                   />
-
-                  {/* ホバー時のオーバーレイ */}
-                  <div
-                    className="
-                    absolute inset-0
-                    bg-gradient-to-t from-coffee-charcoal/50 via-transparent to-transparent
-                    opacity-0 group-hover:opacity-100
-                    transition-opacity duration-300
-                  "
-                  ></div>
-
-                  {/* 炭火のような影 */}
-                  <div
-                    className="
-                    absolute -inset-2
-                    bg-gradient-to-br from-coffee-accent/20 to-coffee-charcoal/20
-                    rounded-xl blur-lg
-                    opacity-0 group-hover:opacity-100
-                    transition-opacity duration-500
-                    -z-10
-                  "
-                  ></div>
-                </div>
-              )}
-
-              {/* カルーセル投稿 */}
-              {media.media_type === 'CAROUSEL_ALBUM' && (
-                <div
-                  className="
-                  group
-                  aspect-square
-                  relative overflow-hidden
-                  rounded-xl md:rounded-2xl
-                  bg-white/20 backdrop-blur-sm
-                  border border-coffee-accent/20
-                  shadow-lg shadow-coffee-charcoal/10
-                  transform hover:scale-105 hover:-translate-y-1
-                  transition-all duration-500
-                  cursor-pointer
-                "
-                >
-                  {/* カルーセルインジケーター */}
-                  <div
-                    className="
-                    absolute top-2 right-2 z-10
-                    bg-coffee-charcoal/70 backdrop-blur-sm
-                    text-white text-xs
-                    px-2 py-1 rounded-full
-                  "
-                  >
-                    1/{media.children.data.length}
-                  </div>
-
-                  <Splide
-                    aria-label="Instagram投稿カルーセル"
-                    options={{
-                      type: 'loop',
-                      autoplay: true,
-                      interval: 3000,
-                      pauseOnHover: true,
-                      arrows: false,
-                      pagination: false,
-                    }}
-                    className="h-full"
-                  >
-                    {media.children.data.map((child) => (
-                      <SplideSlide key={child.id} className="h-full">
-                        <Image
-                          src={child.media_url}
-                          alt="Instagram投稿"
-                          fill
-                          className="
-                            object-cover
-                            group-hover:brightness-110 group-hover:contrast-105
-                            transition-all duration-500
-                          "
-                        />
-                      </SplideSlide>
-                    ))}
-                  </Splide>
 
                   {/* ホバー時のオーバーレイ */}
                   <div
