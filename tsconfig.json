@@ -24,7 +24,7 @@
     "**/*.ts",
     "**/*.tsx",
     "components/sections/Character.jsx",
-    "pages/menu.jsx"
+    "pages/menu/menu.jsx"
   ],
   "exclude": ["node_modules"],
   "jsxImportSource": "@emotion/react"
