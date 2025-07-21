@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import store from 'images/store.jpg'
-import { MugFill } from '../ui/IconSvg'
+import { MugFill } from 'src/lib/iconSvg'
 
 export default function Information() {
   const infoData = [

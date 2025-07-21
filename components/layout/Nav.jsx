@@ -1,9 +1,9 @@
 import { useState, useRef, useEffect, useCallback, useMemo } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import { HeaderBean } from '../ui/IconSvg'
+import { HeaderBean } from 'src/lib/iconSvg'
 
-const Nav = () => {
+export default function Nav() {
   const [center, setCenter] = useState(0)
   const ref0 = useRef(null)
   const ref1 = useRef(null)
@@ -68,5 +68,3 @@ const Nav = () => {
     </nav>
   )
 }
-
-export default Nav

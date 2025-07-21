@@ -32,14 +32,7 @@ export default function Announce({
           </div>
         )}
         <div className={styles.right}>
-          <Image
-            src={icon}
-            alt=""
-            layout="fixed"
-            width="75"
-            height="135"
-            placeholder="blur"
-          />
+          <Image src={icon} alt="" width="75" height="135" placeholder="blur" />
         </div>
       </div>
     </>
@@ -55,14 +48,7 @@ export function Access() {
         <span>皆様のご来店お待ちしております</span>
       </div>
       <div className={styles.right}>
-        <Image
-          src={icon}
-          alt=""
-          layout="fixed"
-          width="75"
-          height="135"
-          placeholder="blur"
-        />
+        <Image src={icon} alt="" width="75" height="135" placeholder="blur" />
       </div>
     </div>
   )

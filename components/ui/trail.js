@@ -7,7 +7,7 @@ const config = {
   friction: 1,
 }
 
-export default function UpToDown() {
+function UpToDown() {
   const [trails, api] = useTrail(
     20,
     () => ({
@@ -33,7 +33,7 @@ export default function UpToDown() {
 
 /////////////////////////////////////
 
-export function FadeIn({ children }) {
+function FadeIn({ children }) {
   const props = useSpring({
     from: { x: -100, y: 0 },
     to: { x: 0, y: 1 },
@@ -56,3 +56,5 @@ export function FadeIn({ children }) {
     </div>
   )
 }
+
+export { UpToDown, FadeIn }

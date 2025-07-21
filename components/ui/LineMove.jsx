@@ -1,5 +1,4 @@
 import { useState } from 'react'
-// import './YourComponent.css' // スタイルを定義したファイル
 import styles from 'styles/lineMove.module.css'
 
 export default function LineMove() {

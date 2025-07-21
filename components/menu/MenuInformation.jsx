@@ -131,8 +131,8 @@ export default function MenuInformation() {
                     <Image
                       src={category.image}
                       alt={category.title}
-                      layout="responsive"
-                      width={50}
+                      width={6000}
+                      height={4000}
                       placeholder="blur"
                       blurDataURL={category.image.blurDataURL}
                       className="
@@ -140,6 +140,7 @@ export default function MenuInformation() {
                         group-hover:brightness-110
                         transition-all duration-300
                       "
+                      style={{ width: '100%', height: 'auto' }}
                     />
                   </div>
                 </div>

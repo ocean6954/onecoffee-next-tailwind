@@ -68,7 +68,6 @@ export default function Posts({ posts }) {
               <Image
                 src={eyecatch.url}
                 alt=""
-                layout="fixed"
                 width={eyecatch.width}
                 height={eyecatch.height}
                 placeholder="blur"

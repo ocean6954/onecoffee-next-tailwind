@@ -36,13 +36,13 @@ export default function Hero() {
             <Image
               src={eyecatch}
               alt="One Coffee Logo"
-              layout="responsive"
+              width={506} // 元画像の幅を指定（例）
+              height={408} // 元画像の高さを指定（例）
               sizes="(min-width: 1024px) 50vw, 80vw"
               priority
               placeholder="blur"
-              className="
-                filter drop-shadow-lg
-              "
+              className="filter drop-shadow-lg"
+              style={{ width: '100%', height: 'auto' }}
             />
           </div>
 
@@ -103,13 +103,15 @@ export default function Hero() {
               <Image
                 src={store}
                 alt="Store Version"
-                layout="responsive"
+                width={484} // 元画像の幅を指定（例）
+                height={463} // 元画像の高さを指定（例）
                 sizes="(min-width: 1024px) 40vw, 60vw"
                 priority
                 placeholder="blur"
                 className="
                   rounded-lg
                 "
+                style={{ width: '100%', height: 'auto' }}
               />
             </div>
           </div>

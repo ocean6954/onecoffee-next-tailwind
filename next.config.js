@@ -2,15 +2,39 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: [
-      'images.microcms-assets.io',
-      'scontent-nrt1-1.cdninstagram.com',
-      'scontent-nrt1-2.cdninstagram.com',
-      'scontent-itm1-1.cdninstagram.com',
-      'scontent.cdninstagram.com',
-      'instagram.fhkd1-1.fna.fbcdn.net',
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.microcms-assets.io',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'scontent-nrt1-1.cdninstagram.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'scontent-nrt1-2.cdninstagram.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'scontent-itm1-1.cdninstagram.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'scontent.cdninstagram.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'instagram.fhkd1-1.fna.fbcdn.net',
+        pathname: '/**',
+      },
     ],
-    // disableStaticImages: true,
+    // disableStaticImages: true, // 必要に応じて
   },
 
   webpack: (config) => {

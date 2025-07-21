@@ -23,7 +23,6 @@ export function SmallLogo() {
     <Image
       src={smallLogo}
       alt=""
-      layout="fixed"
       sizes="(min-width: 768px) 100px, 1vw"
       priority
       placeholder="blur"

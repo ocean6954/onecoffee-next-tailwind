@@ -84,8 +84,9 @@ export default function Review() {
                 <Image
                   src={latte}
                   alt="こだわりのコーヒー"
-                  layout="responsive"
-                  width={50}
+                  style={{ width: '100%', height: 'auto' }}
+                  width={6000}
+                  height={4000}
                   placeholder="blur"
                   blurDataURL={latte.blurDataURL}
                   className="

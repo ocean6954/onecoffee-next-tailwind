@@ -13,7 +13,6 @@ export default function Character({ eyecatch }) {
         <Image
           src={eyecatch.url}
           alt=""
-          layout="fixed"
           width={eyecatch.width}
           height={eyecatch.height}
           className={styles.img}
