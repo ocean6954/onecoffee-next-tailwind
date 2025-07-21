@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import InstagramPosts from 'src/components/instagram/instagramPosts'
+import InstagramPosts from 'src/components/instagram/InstagramPosts'
 
 // Instagram APIを呼び出す関数
 async function fetchInstagramData() {
