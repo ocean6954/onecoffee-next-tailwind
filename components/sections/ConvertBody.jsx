@@ -1,6 +1,6 @@
 import parse from 'html-react-parser'
 import styles from 'styles/convert-body.module.css'
-import { FadeIn } from 'components/ui/Trail.js'
+//import { FadeIn } from 'components/ui/Trail'
 
 export default function ConvertBody({ contentHTML }) {
   const contentReact = parse(contentHTML)

@@ -24,7 +24,7 @@ const Nav = () => {
   useEffect(() => {
     if (router.pathname === '/') {
       updateCenter(0)
-    } else if (router.pathname === '/menu') {
+    } else if (router.pathname === '/Menu') {
       updateCenter(1)
     }
   }, [router.pathname, updateCenter])

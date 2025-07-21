@@ -133,7 +133,6 @@ export default function Information() {
                 <Image
                   src={store}
                   alt="店舗外観"
-                  layout="responsive"
                   placeholder="blur"
                   blurDataURL={store.blurDataURL}
                   className="

@@ -4,10 +4,11 @@ const nextConfig = {
   images: {
     domains: [
       'images.microcms-assets.io',
+      'scontent-nrt1-1.cdninstagram.com',
       'scontent-nrt1-2.cdninstagram.com',
       'scontent-itm1-1.cdninstagram.com',
       'scontent.cdninstagram.com',
-      'instagram.fhkd1-1.fna.fbcdn.net', // ← これを追加！
+      'instagram.fhkd1-1.fna.fbcdn.net',
     ],
     // disableStaticImages: true,
   },

@@ -3,9 +3,9 @@ import { useState } from 'react'
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react'
 import Character from 'components/sections/Character'
-import ConvertBody from '/components/convert-body'
+import ConvertBody from '/components/sections/ConvertBody'
 import { Hind } from '@next/font/google'
-import { Maruta, PaperBag, Latte, Latte2, Mug } from './iconSVG'
+import { Maruta, PaperBag, Latte, Latte2, Mug } from '../ui/IconSvg'
 
 const FontHind = Hind({
   weight: '400',

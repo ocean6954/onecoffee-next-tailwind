@@ -5,7 +5,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import styles from 'styles/posts.module.css'
 import Character from 'components/sections/Character'
-import ConvertBody from '/components/convert-body'
+import ConvertBody from './ConvertBody'
 
 export default function Posts({ posts }) {
   const [isActive, setIsActive] = useState(false)
