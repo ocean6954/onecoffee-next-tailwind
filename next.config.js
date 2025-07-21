@@ -37,6 +37,10 @@ const nextConfig = {
     // disableStaticImages: true, // 必要に応じて
   },
   output: 'export',
+  env: {
+    NEXT_PUBLIC_SERVICE_DOMAIN: process.env.NEXT_PUBLIC_SERVICE_DOMAIN,
+    NEXT_PUBLIC_API_KEY: process.env.NEXT_PUBLIC_API_KEY,
+  },
 
   webpack: (config) => {
     config.module.rules.push({
