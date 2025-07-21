@@ -2,9 +2,9 @@ import styles from 'styles/announce.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import icon from 'images/icon.png'
-import Container from 'components/container'
+import Container from 'components/layout/Container'
 import { useState } from 'react'
-import Modal from 'components/modal'
+import Modal from 'components/ui/Modal'
 
 export default function Announce({
   title,

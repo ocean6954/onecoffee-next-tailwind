@@ -1,6 +1,6 @@
 import MenuDisplay from 'components/menuDisplay'
 import React, { useState, useEffect } from 'react'
-import { Drink, Bean, Food } from 'components/iconSVG'
+import { Drink, Bean, Food } from 'src/components/ui/IconSvg'
 import Container from 'src/components/container'
 import { getAllPosts } from 'lib/api'
 import { getPlaiceholder } from 'plaiceholder'
@@ -18,10 +18,10 @@ export default function Menu({ posts }) {
     setModalNumber(null)
   }
 
-  const handleIconClick = (modalNumber) => {
+  const handleIconClick = useCallback((modalNumber) => {
     closeModal()
     openModal(modalNumber)
-  }
+  }, [])
 
   useEffect(() => {
     if (
@@ -30,7 +30,7 @@ export default function Menu({ posts }) {
     ) {
       handleIconClick(router.query.triggerFunction)
     }
-  }, [router.query.triggerFunction])
+  }, [handleIconClick, router.query.triggerFunction])
 
   const menuItems = [
     {

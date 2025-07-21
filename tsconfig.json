@@ -23,8 +23,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/character.js",
-    "pages/menu.js"
+    "components/sections/Character.jsx",
+    "pages/Menu.jsx"
   ],
   "exclude": ["node_modules"],
   "jsxImportSource": "@emotion/react"

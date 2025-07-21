@@ -27,18 +27,9 @@ export default function MenuInformation() {
     <section
       className="
       py-16 md:py-24
-      bg-gradient-to-b from-coffee-main/80 to-coffee-main
       relative overflow-hidden
     "
     >
-      {/* 背景装飾 */}
-      <div
-        className="
-        absolute inset-0
-        bg-gradient-to-r from-coffee-accent/5 via-transparent to-coffee-charcoal/5
-      "
-      ></div>
-
       <div
         className="
         relative z-10

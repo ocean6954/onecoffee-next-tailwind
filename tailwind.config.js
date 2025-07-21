@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'coffee-main': '#f6e9cb',
-        'coffee-accent': '#d9a62e',
-        'coffee-charcoal': '#2c3e50',
+        'coffee-main': '#f6e9cb', // メインの黄色カラー
+        'coffee-accent': '#d9a62e', // テーマカラー
+        'coffee-charcoal': '#2c3e50', // 炭の色
         'coffee-fire': '#ff6b35', // オレンジ系の火の色
         'coffee-ember': '#e55722', // 少し深いオレンジ
       },

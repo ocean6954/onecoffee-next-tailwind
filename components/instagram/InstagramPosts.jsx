@@ -7,22 +7,14 @@ const InstagramPosts = ({ posts }) => {
     <section
       className="
       py-16 md:py-24
-      bg-gradient-to-t from-coffee-main/60 to-coffee-main
       relative overflow-hidden
     "
     >
-      {/* 背景装飾 */}
-      <div
-        className="
-        absolute inset-0
-        bg-gradient-to-br from-coffee-charcoal/5 via-transparent to-coffee-accent/10
-      "
-      ></div>
-
       <div
         className="
         relative z-10
         max-w-6xl mx-auto px-4 md:px-8 lg:px-16
+        mb-6
       "
       >
         {/* セクションタイトル */}
@@ -38,14 +30,14 @@ const InstagramPosts = ({ posts }) => {
           >
             Instagram
             {/* アンダーライン装飾 */}
-            {/* <div
+            <div
               className="
               absolute -bottom-2 left-1/2 transform -translate-x-1/2
               w-24 md:w-32 h-1
               bg-gradient-to-r from-coffee-accent/50 via-coffee-accent to-coffee-accent/50
               rounded-full
             "
-            ></div> */}
+            ></div>
           </h2>
           <p
             className="
@@ -275,7 +267,7 @@ const InstagramPosts = ({ posts }) => {
         {/* Instagram リンク */}
         <div className="text-center mt-12">
           <a
-            href="https://instagram.com/1coffee0326"
+            href="https://instagram.com/onecoffee_hakodate"
             target="_blank"
             rel="noopener noreferrer"
             className="

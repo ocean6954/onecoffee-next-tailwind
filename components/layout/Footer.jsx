@@ -1,13 +1,13 @@
-import Container from 'components/container'
+import Container from 'src/components/layout/Container'
 
 export default function Footer() {
   return (
     <footer
       className="
-      bg-coffee-charcoal
-      text-coffee-main
-      py-8 mt-16
-      shadow-inner shadow-coffee-charcoal/50
+      bg-coffee-fire/90 backdrop-blur-sm
+      text-white
+      py-8
+      shadow-inner shadow-coffee-fire/50
     "
     >
       <Container>
@@ -17,7 +17,7 @@ export default function Footer() {
           font-light tracking-wide
         "
         >
-          <span className="text-coffee-accent">&copy;</span>
+          <span className="text-coffee-main">&copy;</span>
           Charcoal Fire Roasted Coffee - oneCoffee
         </p>
       </Container>

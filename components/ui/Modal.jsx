@@ -1,7 +1,7 @@
 import styles from 'styles/modal.module.css'
-import Menu from 'components/menu_test'
+import Menu from 'components/menu/MenuTest'
 
-export default function ({ active = false, setModal }) {
+export default function Modal({ active = false, setModal }) {
   const closeModal = () => {
     setModal(false)
   }

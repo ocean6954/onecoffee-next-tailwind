@@ -4,7 +4,7 @@ import { css, jsx } from '@emotion/react'
 import { useState } from 'react'
 import Image from 'next/image'
 import styles from 'styles/posts.module.css'
-import Character from 'components/character'
+import Character from 'components/sections/Character'
 import ConvertBody from '/components/convert-body'
 
 export default function Posts({ posts }) {
@@ -62,7 +62,7 @@ export default function Posts({ posts }) {
       </div>
       <div className={styles.gridContainer}>
         {posts.map(({ title, eyecatch, slug, category, id, content }) => (
-          <figure>
+          <figure key={id}>
             {/* {console.log(content)} */}
             <div className={styles.fit} id={id}>
               <Image

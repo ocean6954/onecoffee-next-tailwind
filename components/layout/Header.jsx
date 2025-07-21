@@ -1,13 +1,13 @@
-import Nav from 'components/nav'
+import Nav from './nav'
 
 export default function Header() {
   return (
     <header
       className="
-      bg-coffee-main
-      shadow-lg shadow-coffee-charcoal/20
+      bg-coffee-fire/10 backdrop-blur-sm
+      shadow-lg shadow-coffee-charcoal/40
       sticky top-0 z-50
-      border-b border-coffee-accent/30
+      border-b border-coffee-fire/20
     "
     >
       <Nav />

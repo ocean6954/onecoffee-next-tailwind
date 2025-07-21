@@ -22,8 +22,10 @@ export default function UpToDown() {
 
   return (
     <div>
-      {trails.map((props) => (
-        <animated.div style={props}>Hello World</animated.div>
+      {trails.map((props, index) => (
+        <animated.div style={props} key={index}>
+          Hello World
+        </animated.div>
       ))}
     </div>
   )

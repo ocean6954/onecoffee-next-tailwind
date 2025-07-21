@@ -2,7 +2,7 @@ import styles from 'styles/menuDisplay.module.css'
 import { useState } from 'react'
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react'
-import Character from 'components/character'
+import Character from 'components/sections/Character'
 import ConvertBody from '/components/convert-body'
 import { Hind } from '@next/font/google'
 import { Maruta, PaperBag, Latte, Latte2, Mug } from './iconSVG'
@@ -22,13 +22,14 @@ export default function MenuDisplay(props) {
   const [content, setContent] = useState('')
   const { posts } = props
 
-  const style = css`
-    &:hover {
-      background-color: ${color};
-      opacity: 0.5;
-      width: 100vw;
-    }
-  `
+  // const style = css`
+  //   &:hover {
+  //     background-color: ${color};
+  //     opacity: 0.5;
+  //     width: 100vw;
+  //   }
+  // `
+
   const modalContent = css`
     // position: absolute;
     z-index: 10;
@@ -51,15 +52,16 @@ export default function MenuDisplay(props) {
       }
     }
   `
-  const toggleModal = (number) => {
-    const [modalNumber, setModalNumber] = useState(null)
-    useEffect(
-      (number) => {
-        setModalNumber(number)
-      },
-      [modalNumber],
-    )
-  }
+  // const toggleModal = (number) => {
+  //   const [modalNumber, setModalNumber] = useState(null)
+  //   useEffect(
+  //     (number) => {
+  //       setModalNumber(number)
+  //     },
+  //     [modalNumber],
+  //   )
+  // }
+
   return (
     <>
       {props.modalNumber === 1 && (
@@ -133,6 +135,7 @@ export default function MenuDisplay(props) {
                 {posts.map(
                   ({ title, eyecatch, slug, category, id, content }) => (
                     <li
+                      key={id}
                       onClick={() => (
                         setIsActive((prev) => !prev),
                         setColor(slug),

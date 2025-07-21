@@ -18,14 +18,14 @@ const Drink = () => (
       stroke="#D9A62E"
       strokeWidth="10"
       strokeLinecap="round"
-      stroke-linejoin="round"
+      strokeLinejoin="round"
     />
     <path
       d="M69.8359 44.657H82.2109C85.493 44.657 88.6406 45.9608 90.9614 48.2815C93.2821 50.6023 94.5859 53.7499 94.5859 57.032C94.5859 60.314 93.2821 63.4617 90.9614 65.7824C88.6406 68.1032 85.493 69.407 82.2109 69.407H74.7859"
       stroke="#D9A62E"
       strokeWidth="10"
       strokeLinecap="round"
-      stroke-linejoin="round"
+      strokeLinejoin="round"
     />
   </svg>
 )
@@ -59,7 +59,7 @@ const Food = () => (
       stroke="#D9A62E"
       strokeWidth="9"
       strokeLinecap="round"
-      stroke-linejoin="round"
+      strokeLinejoin="round"
     />
     <path
       d="M59.8535 34.3862C64.3052 34.3862 67.914 30.3942 67.914 25.4697C67.914 20.5453 64.3052 16.5532 59.8535 16.5532C55.4018 16.5532 51.793 20.5453 51.793 25.4697C51.793 30.3942 55.4018 34.3862 59.8535 34.3862Z"
@@ -83,7 +83,7 @@ const Food = () => (
       stroke="#D9A62E"
       strokeWidth="9"
       strokeLinecap="round"
-      stroke-linejoin="round"
+      strokeLinejoin="round"
     />
     <path d="M15.521 45.5317H77.99" stroke="#D9A62E" strokeWidth="9" />
   </svg>
@@ -156,7 +156,7 @@ const Frame = () => (
     viewBox="0 0 410 620"
   >
     <path
-      class="cls-1"
+      className="cls-1"
       d="m359,1.5H51c0,27.34-22.16,49.5-49.5,49.5v518c27.34,0,49.5,22.16,49.5,49.5h308c0-27.34,22.16-49.5,49.5-49.5V51c-27.34,0-49.5-22.16-49.5-49.5Z"
       fill=" none"
       stroke="#d9a62e"
@@ -182,14 +182,14 @@ const PaperBag = ({ slug, eyecatch }) => (
         stroke="#636363"
         strokeWidth="15"
         strokeLinecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
       <path
         d="M170.057 1406C213.133 1406 254.446 1389.63 284.905 1360.5C315.365 1331.37 332.477 1291.86 332.477 1250.67V798.647C332.473 738.361 317.792 678.904 289.598 624.984L170.057 396.334M391.183 318.667H915.623"
         stroke="#636363"
         strokeWidth="15"
         strokeLinecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
     </svg>
     <div className={styles.imageContainer}>
@@ -213,7 +213,7 @@ const Test2 = ({ eyecatch }) => (
       width="359"
       height="403"
       viewBox="0 0 359 403"
-      z-index="1"
+      //z-index="1"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={styles.bag}
@@ -223,14 +223,14 @@ const Test2 = ({ eyecatch }) => (
         stroke="#F74040"
         strokeWidth="10"
         strokeLinecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
       <path
         d="M48.625 398C60.1951 398 71.2913 393.399 79.4725 385.21C87.6538 377.021 92.25 365.914 92.25 354.333V227.263C92.2488 210.316 88.3058 193.602 80.733 178.444L48.625 114.167M157.688 92.3334H201.312M179.5 267C179.5 278.581 184.096 289.688 192.277 297.877C200.459 306.066 211.555 310.667 223.125 310.667C234.695 310.667 245.791 306.066 253.973 297.877C262.154 289.688 266.75 278.581 266.75 267C266.75 255.419 262.154 244.312 253.973 236.123C245.791 227.934 234.695 223.333 223.125 223.333C211.555 223.333 200.459 227.934 192.277 236.123C184.096 244.312 179.5 255.419 179.5 267Z"
         stroke="#F74040"
         strokeWidth="10"
         strokeLinecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
     </svg>
     <div className={styles.imageContainer}>
@@ -317,14 +317,14 @@ const BagBase = () => (
       stroke="#636363"
       strokeWidth="15"
       strokeLinecap="round"
-      stroke-linejoin="round"
+      strokeLinejoin="round"
     />
     <path
       d="M170.057 1406C213.133 1406 254.446 1389.63 284.905 1360.5C315.365 1331.37 332.477 1291.86 332.477 1250.67V798.647C332.473 738.361 317.792 678.904 289.598 624.984L170.057 396.334M391.183 318.667H915.623"
       stroke="#636363"
       strokeWidth="15"
       strokeLinecap="round"
-      stroke-linejoin="round"
+      strokeLinejoin="round"
     />
   </svg>
 )
@@ -430,11 +430,11 @@ const Reel = () => (
         y2="29.36"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".12" stop-color="#fccd00" />
-        <stop offset=".28" stop-color="#f29b29" />
-        <stop offset=".44" stop-color="#f1942e" />
-        <stop offset=".75" stop-color="#ea652d" />
-        <stop offset=".91" stop-color="#d82c8a" />
+        <stop offset=".12" stopColor="#fccd00" />
+        <stop offset=".28" stopColor="#f29b29" />
+        <stop offset=".44" stopColor="#f1942e" />
+        <stop offset=".75" stopColor="#ea652d" />
+        <stop offset=".91" stopColor="#d82c8a" />
       </linearGradient>
       <linearGradient
         id="_インスタ-2"
@@ -472,11 +472,11 @@ const Reel = () => (
     </defs>
     <g id="_レイヤー_1-2" data-name="レイヤー 1">
       <g>
-        <line class="icls-5" x1="123.68" y1="5.5" x2="143" y2="53.23" />
-        <line class="icls-3" x1="56.64" y1="5.5" x2="77.09" y2="53.23" />
-        <line class="icls-1" x1="5.5" y1="53.23" x2="195.84" y2="53.23" />
+        <line className="icls-5" x1="123.68" y1="5.5" x2="143" y2="53.23" />
+        <line className="icls-3" x1="56.64" y1="5.5" x2="77.09" y2="53.23" />
+        <line className="icls-1" x1="5.5" y1="53.23" x2="195.84" y2="53.23" />
         <rect
-          class="icls-2"
+          className="icls-2"
           x="5.5"
           y="5.5"
           width="190.34"
@@ -485,7 +485,7 @@ const Reel = () => (
           ry="34.02"
         />
         <path
-          class="icls-4"
+          className="icls-4"
           d="M84.74,99.23v40.22c0,2.51,2.72,4.08,4.9,2.83l33.9-19.57c2.59-1.5,2.59-5.24,0-6.73l-33.9-19.57c-2.18-1.26-4.9.31-4.9,2.83Z"
         />
       </g>

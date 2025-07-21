@@ -1,11 +1,11 @@
-import Hero from 'components/hero'
-import Container from 'components/container'
+import Hero from 'components/layout/Hero'
+import Container from 'components/layout/Container'
 import { ReactElement } from 'react'
 import FadeInSample from '/components/text'
-import UpToDown from 'components/trail'
-import { FadeIn } from 'components/trail'
+import UpToDown from 'components/ui/Trail'
+import { FadeIn } from 'components/ui/Trail'
 
-export default function () {
+export default function About() {
   return (
     <>
       <Container>

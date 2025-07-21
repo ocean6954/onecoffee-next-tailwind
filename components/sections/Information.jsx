@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import store from 'images/store.jpg'
-import { MugFill } from './iconSVG'
+import { MugFill } from '../ui/IconSvg'
 
 export default function Information() {
   const infoData = [
@@ -13,19 +13,9 @@ export default function Information() {
     <section
       className="
       py-16 md:py-24
-      bg-gradient-to-t from-coffee-main to-coffee-main/80
       relative
     "
     >
-      {/* 背景装飾 */}
-      <div
-        className="
-        absolute inset-0
-        bg-gradient-to-br from-coffee-charcoal/5 via-transparent to-coffee-accent/5
-        transform -rotate-1
-      "
-      ></div>
-
       <div
         className="
         relative z-10
@@ -45,14 +35,14 @@ export default function Information() {
           >
             Information
             {/* アンダーライン装飾 */}
-            {/* <div
+            <div
               className="
               absolute -bottom-2 left-1/2 transform -translate-x-1/2
               w-24 md:w-32 h-1
               bg-gradient-to-r from-coffee-accent/50 via-coffee-accent to-coffee-accent/50
               rounded-full
             "
-            ></div> */}
+            ></div>
           </h2>
         </div>
 
@@ -110,7 +100,7 @@ export default function Information() {
           {/* 店舗画像セクション */}
           <div
             className="
-            space-y-8
+            space-y-6
           "
           >
             {/* メイン画像 */}
@@ -121,14 +111,14 @@ export default function Information() {
             "
             >
               {/* 炭火のような影 */}
-              {/* <div
+              <div
                 className="
                 absolute -inset-4
                 bg-gradient-to-br from-coffee-accent/30 to-coffee-charcoal/30
                 rounded-2xl blur-xl
                 transform rotate-3
               "
-              ></div> */}
+              ></div>
 
               <div
                 className="

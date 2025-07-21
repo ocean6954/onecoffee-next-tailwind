@@ -1,9 +1,10 @@
-import Hero from 'components/hero'
-import Container from 'components/container'
+import Hero from 'components/layout/Hero'
+import Container from 'components/layout/Container'
 import { getAllPosts, getPostBySlug } from 'lib/api'
-import Posts from 'components/posts'
+import Posts from 'components/sections/Posts'
 import { getPlaiceholder } from 'plaiceholder'
-export default function Coffees({ posts }) {
+
+export default function Coffee({ posts }) {
   return (
     <Container>
       <Hero title={' Coffees'} subtitle={'一覧だよ'} />
